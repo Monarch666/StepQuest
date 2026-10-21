@@ -1,0 +1,31 @@
+# StepQuest — Netlify Production Deployment Configuration
+
+[build]
+  publish = "web"
+  functions = "netlify/functions"
+
+# API Route: Configuration & Supabase Discovery Endpoint
+[[redirects]]
+  from = "/api/config"
+  to = "/.netlify/functions/config"
+  status = 200
+
+# API Route: Health Check Endpoint
+[[redirects]]
+  from = "/api/health"
+  to = "/.netlify/functions/health"
+  status = 200
+
+# SPA Fallback Route: All paths resolve to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security & Cache Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
