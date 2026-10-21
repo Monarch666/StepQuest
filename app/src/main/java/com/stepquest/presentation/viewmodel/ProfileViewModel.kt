@@ -28,6 +28,7 @@ data class ProfileUiState(
 
 @HiltViewModel
 class ProfileViewModel @Inject constructor(
+    @dagger.hilt.android.qualifiers.ApplicationContext private val context: android.content.Context,
     private val authRepository: AuthRepository,
     private val userRepository: UserRepository,
     private val journeyRepository: JourneyRepository,
@@ -51,7 +52,7 @@ class ProfileViewModel @Inject constructor(
             val journeys = journeyRepository.getUserJourneys(user.id).getOrNull() ?: emptyList()
             val completed = journeys.count { it.isCompleted }
             val achievements = achievementRepository.getAchievements(user.id).getOrNull() ?: emptyList()
-            val earnedCount = achievements.count { it.earnedAt != null }
+            val earnedCount = achievements.count { it.earnedAt.isNotBlank() }
 
             _state.value = ProfileUiState(
                 isLoading = false,
@@ -67,8 +68,19 @@ class ProfileViewModel @Inject constructor(
         viewModelScope.launch {
             val user = authRepository.currentUser.firstOrNull() ?: return@launch
             _state.value = _state.value.copy(isUploadingAvatar = true)
-            // Read bytes from URI then delegate to use case
-            uploadAvatarUseCase(user.id, uri.toString().toByteArray())
+            val bytes = try {
+                context.contentResolver.openInputStream(uri)?.use { it.readBytes() }
+            } catch (_: Exception) { null }
+
+            if (bytes == null) {
+                _state.value = _state.value.copy(
+                    isUploadingAvatar = false,
+                    error = "Failed to read image"
+                )
+                return@launch
+            }
+
+            uploadAvatarUseCase(user.id, bytes)
                 .onSuccess { loadProfile() }
                 .onFailure { e ->
                     _state.value = _state.value.copy(

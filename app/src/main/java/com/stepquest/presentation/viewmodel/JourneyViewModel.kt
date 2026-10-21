@@ -23,7 +23,9 @@ data class JourneyUiState(
     val milestones: List<Milestone> = emptyList(),
     val userJourney: UserJourney? = null,
     val error: String? = null
-)
+) {
+    val activeJourney: UserJourney? get() = userJourney
+}
 
 @HiltViewModel
 class JourneyViewModel @Inject constructor(
@@ -34,12 +36,13 @@ class JourneyViewModel @Inject constructor(
 
     private val _uiState = MutableStateFlow(JourneyUiState())
     val uiState: StateFlow<JourneyUiState> = _uiState.asStateFlow()
+    val state: StateFlow<JourneyUiState> get() = uiState
 
     init {
         loadJourneys()
     }
 
-    private fun loadJourneys() {
+    fun loadJourneys() {
         viewModelScope.launch {
             _uiState.value = _uiState.value.copy(isLoading = true)
             journeyRepository.getJourneys()

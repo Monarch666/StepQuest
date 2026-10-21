@@ -31,7 +31,7 @@ fun AchievementsScreen(
 ) {
     val state by viewModel.state.collectAsState()
 
-    val earnedCount = state.achievements.count { it.earnedAt != null }
+    val earnedCount = state.achievements.count { it.earnedAt.isNotBlank() }
     val totalCount = state.milestones.size
 
     Scaffold(
@@ -152,7 +152,7 @@ fun AchievementsScreen(
                 }
                 item {
                     val recentEarned = state.achievements
-                        .filter { it.earnedAt != null }
+                        .filter { it.earnedAt.isNotBlank() }
                         .takeLast(3)
                     Row(
                         modifier = Modifier
@@ -164,7 +164,7 @@ fun AchievementsScreen(
                             val milestone = state.milestones.find { m -> m.id == ach.milestoneId }
                             AchievementBadge(
                                 modifier = Modifier.weight(1f),
-                                title = milestone?.name ?: "Badge",
+                                title = milestone?.title ?: "Badge",
                                 isEarned = true
                             )
                         }
@@ -196,11 +196,11 @@ fun AchievementsScreen(
                         ) {
                             rowItems.forEach { milestone ->
                                 val isEarned = state.achievements.any {
-                                    it.milestoneId == milestone.id && it.earnedAt != null
+                                    it.milestoneId == milestone.id && it.earnedAt.isNotBlank()
                                 }
                                 AchievementBadge(
                                     modifier = Modifier.weight(1f),
-                                    title = milestone.name,
+                                    title = milestone.title,
                                     subtitle = "${milestone.kmMark.toInt()} km",
                                     isEarned = isEarned
                                 )

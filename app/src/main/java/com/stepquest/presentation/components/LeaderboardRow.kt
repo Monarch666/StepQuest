@@ -23,6 +23,23 @@ import com.stepquest.utils.toKmString
 @Composable
 fun LeaderboardRow(
     rank: Int,
+    entry: com.stepquest.domain.model.LeaderboardEntry,
+    isCurrentUser: Boolean,
+    modifier: Modifier = Modifier
+) {
+    LeaderboardRow(
+        rank = rank,
+        username = entry.username,
+        avatarUrl = entry.avatarUrl,
+        totalKm = entry.totalKm,
+        isCurrentUser = isCurrentUser,
+        modifier = modifier
+    )
+}
+
+@Composable
+fun LeaderboardRow(
+    rank: Int,
     username: String,
     avatarUrl: String?,
     totalKm: Double,

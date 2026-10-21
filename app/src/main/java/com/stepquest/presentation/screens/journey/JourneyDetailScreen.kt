@@ -48,7 +48,7 @@ import com.stepquest.utils.toKmString
 fun JourneyDetailScreen(
     journeyId: String,
     onBack: () -> Unit,
-    onPaywall: () -> Unit,
+    onPaywall: () -> Unit = {},
     viewModel: JourneyViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()

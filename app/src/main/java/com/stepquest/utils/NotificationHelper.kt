@@ -33,7 +33,7 @@ class NotificationHelper @Inject constructor(
 
     fun showMilestoneNotification(milestoneTitle: String) {
         val notification = NotificationCompat.Builder(context, Constants.NOTIFICATION_CHANNEL_ID)
-            .setSmallIcon(android.R.drawable.ic_dialog_info) // Replace with custom icon
+            .setSmallIcon(com.stepquest.R.drawable.ic_notification)
             .setContentTitle("🎉 Milestone Reached!")
             .setContentText("You've reached \"$milestoneTitle\" — keep going!")
             .setPriority(NotificationCompat.PRIORITY_HIGH)

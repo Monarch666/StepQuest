@@ -40,6 +40,12 @@ class JourneyDataSource @Inject constructor(
         }.decodeList<UserJourney>()
     }
 
+    suspend fun getUserJourneyById(userJourneyId: String): UserJourney {
+        return userJourneys.select {
+            filter { eq("id", userJourneyId) }
+        }.decodeSingle<UserJourney>()
+    }
+
     suspend fun getActiveJourney(userId: String): UserJourney? {
         val results = userJourneys.select {
             filter {

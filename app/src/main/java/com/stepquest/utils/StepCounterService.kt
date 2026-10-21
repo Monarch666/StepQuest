@@ -26,6 +26,7 @@ class StepCounterService : Service() {
 
     @Inject lateinit var stepSensorManager: StepSensorManager
     @Inject lateinit var updateProgressUseCase: UpdateProgressUseCase
+    @Inject lateinit var authDataSource: com.stepquest.data.remote.AuthDataSource
 
     private val serviceScope = CoroutineScope(Dispatchers.Default + SupervisorJob())
     private var lastSyncedSteps = 0
@@ -52,7 +53,7 @@ class StepCounterService : Service() {
         super.onCreate()
         createNotificationChannel()
         startForeground(NOTIFICATION_ID, buildNotification(0))
-        stepSensorManager.start()
+        stepSensorManager.startListening()
         startSyncLoop()
     }
 
@@ -64,19 +65,23 @@ class StepCounterService : Service() {
 
     override fun onDestroy() {
         super.onDestroy()
-        stepSensorManager.stop()
+        stepSensorManager.stopListening()
         serviceScope.cancel()
     }
 
     private fun startSyncLoop() {
         serviceScope.launch {
-            stepSensorManager.todaySteps.collect { steps ->
+            stepSensorManager.stepCount.collect { steps ->
                 updateNotification(steps)
                 // Sync every 500 steps to reduce DB writes
                 if (steps - lastSyncedSteps >= 500) {
                     val delta = steps - lastSyncedSteps
-                    updateProgressUseCase(delta)
-                    lastSyncedSteps = steps
+                    val userId = authDataSource.getCurrentUserId()
+                    if (userId != null) {
+                        val kmDelta = delta * Constants.KM_PER_STEP
+                        updateProgressUseCase(userId, delta, kmDelta)
+                        lastSyncedSteps = steps
+                    }
                 }
             }
         }

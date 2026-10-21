@@ -45,3 +45,9 @@ val ErrorColor = Color(0xFFBA1A1A)
 val ErrorContainer = Color(0xFFFFDAD6)
 val OnError = Color(0xFFFFFFFF)
 val OnErrorContainer = Color(0xFF93000A)
+
+// ── Difficulty Badges & Status Colors (Stitch dark palette) ──
+val EasyBadge = Color(0xFF62DF7D)
+val ModerateBadge = Color(0xFFFFB95F)
+val HardBadge = Color(0xFFF66018)
+val SuccessGreen = Color(0xFF62DF7D)

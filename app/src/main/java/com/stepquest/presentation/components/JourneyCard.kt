@@ -33,6 +33,24 @@ import com.stepquest.utils.toKmString
  */
 @Composable
 fun JourneyCard(
+    journey: com.stepquest.domain.model.Journey,
+    userJourney: com.stepquest.domain.model.UserJourney? = null,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    JourneyCard(
+        title = journey.title,
+        totalKm = journey.totalKm,
+        difficulty = journey.difficulty,
+        bannerUrl = journey.bannerUrl,
+        progressKm = userJourney?.progressKm,
+        onClick = onClick,
+        modifier = modifier
+    )
+}
+
+@Composable
+fun JourneyCard(
     title: String,
     totalKm: Double,
     difficulty: String,

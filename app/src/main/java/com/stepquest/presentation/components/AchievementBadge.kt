@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 fun AchievementBadge(
     title: String,
     isEarned: Boolean,
+    subtitle: String? = null,
     earnedDate: String? = null,
     modifier: Modifier = Modifier
 ) {
@@ -67,6 +68,15 @@ fun AchievementBadge(
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.padding(top = 6.dp)
         )
+
+        if (subtitle != null) {
+            Text(
+                text = subtitle,
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(top = 2.dp)
+            )
+        }
 
         if (isEarned && earnedDate != null) {
             Text(

@@ -30,6 +30,7 @@ class StepSensorManager @Inject constructor(
 
     private val _stepCount = MutableStateFlow(0)
     val stepCount: Flow<Int> = _stepCount
+    val todaySteps: Flow<Int> get() = stepCount
 
     val isSensorAvailable: Boolean
         get() = stepSensor != null
@@ -46,6 +47,10 @@ class StepSensorManager @Inject constructor(
     fun stopListening() {
         sensorManager.unregisterListener(stepListener)
     }
+
+    // Convenience aliases
+    fun start() = startListening()
+    fun stop() = stopListening()
 
     private val stepListener = object : SensorEventListener {
         override fun onSensorChanged(event: SensorEvent) {

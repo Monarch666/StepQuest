@@ -43,7 +43,7 @@ class JourneyRepositoryImpl @Inject constructor(
         additionalKm: Double
     ): Result<UserJourney> = runCatching {
         // Fetch current progress, add the delta, and write back
-        val current = journeyDataSource.getUserJourneys("").first { it.id == userJourneyId }
+        val current = journeyDataSource.getUserJourneyById(userJourneyId)
         val newKm = current.progressKm + additionalKm
         journeyDataSource.updateProgress(userJourneyId, newKm)
     }

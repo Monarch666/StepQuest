@@ -115,6 +115,8 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
+    implementation(libs.hilt.work)
+    kapt(libs.hilt.ext.compiler)
 
     // Supabase
     implementation(platform(libs.supabase.bom))
