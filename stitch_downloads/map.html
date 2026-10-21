@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#39393c","on-surface":"#e4e1e6","surface-container":"#1f1f22","on-background":"#e4e1e6","error-container":"#93000a","on-tertiary-container":"#3e2400","on-primary-container":"#4f1700","surface":"#131316","on-secondary-container":"#003111","on-primary-fixed":"#370e00","surface-variant":"#353438","surface-container-low":"#1b1b1e","surface-container-high":"#2a2a2d","surface-dim":"#131316","surface-tint":"#ffb599","secondary-fixed":"#7ffc97","primary-fixed-dim":"#ffb599","error":"#ffb4ab","on-tertiary-fixed":"#2a1700","on-error-container":"#ffdad6","tertiary-fixed":"#ffddb8","on-primary-fixed-variant":"#7f2b00","secondary":"#62df7d","tertiary-fixed-dim":"#ffb95f","secondary-container":"#1ca64d","primary":"#ffb599","on-primary":"#5a1c00","inverse-surface":"#e4e1e6","surface-container-highest":"#353438","tertiary":"#ffb95f","primary-container":"#f66018","primary-fixed":"#ffdbce","tertiary-container":"#ca8100","on-tertiary-fixed-variant":"#653e00","outline":"#a98a7e","outline-variant":"#5a4138","inverse-on-surface":"#303033","on-error":"#690005","surface-container-lowest":"#0e0e11","inverse-primary":"#a73a00","on-surface-variant":"#e2bfb2","on-secondary-fixed":"#002109","on-secondary-fixed-variant":"#005320","on-secondary":"#003914","secondary-fixed-dim":"#62df7d","on-tertiary":"#472a00","background":"#131316"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin":"1.5rem","gutter-desktop":"1.5rem","margin-desktop":"2.5rem","space-xs":"0.25rem","space-xl":"2rem","space-sm":"0.5rem","gutter":"1.25rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"metric-large":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"label-md":["Inter"],"metric-display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-mono":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"metric-large":["2rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-sm":["1.25rem",{"lineHeight":"1.3","letterSpacing":"-0.015em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25","letterSpacing":"0.01em","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"600"}],"metric-display":["3rem",{"lineHeight":"1.0","letterSpacing":"-0.04em","fontWeight":"800"}],"headline-md":["1.75rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"700"}],"label-mono":["0.6875rem",{"lineHeight":"1.0","letterSpacing":"0.08em","fontWeight":"700"}],"headline-xl":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"800"}],"body-md":["0.9375rem",{"lineHeight":"1.5","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.025em","fontWeight":"700"}],"body-lg":["1.125rem",{"lineHeight":"1.6","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.45","letterSpacing":"0.005em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-low border-b border-surface-container-highest"><div class="h-16 max-w-[1600px] mx-auto px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><img alt="StepQuest Mountain Path Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X9BqrPG6mCupRaSRCU0dxurUDmBd-hlXYaXtLl1U0U99ZkHqP0lN-X6QfbhDfMlGW180q0v66I9EFgfn5dJCfTBsSFQiN_iBt5xhZuTp3F9pqIPBDm6ypg2DClf3exAQrmyDV_ab1f8ajlIF54KkFGhKjNdHiwAFVpgQ55gQbIHhpQOuy9Ij11GLJL9N4wtdK_iCpi5Al3IQgTPIYit-deQsS0Bstq_ha4-yBoko_D6NEld1zTz6LqqjdY"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none uppercase">StepQuest</span><span class="font-label-mono text-label-mono uppercase tracking-widest text-outline mt-space-xs">Real-World Walking Quests</span></div></div><nav class="hidden md:flex items-center p-space-xs bg-surface-container-lowest border border-surface-container-highest rounded-lg gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors uppercase tracking-wider" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors uppercase tracking-wider" data-path="quests" href="#">Quests</a><a aria-current="page" class="px-space-md py-space-xs rounded transition-colors uppercase tracking-wider bg-primary-container text-on-primary font-bold" data-path="trail-map" href="#">Trail Map</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors uppercase tracking-wider" data-path="leaderboard" href="#">Leaderboard</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors uppercase tracking-wider" data-path="achievements" href="#">Achievements</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs border border-surface-container-highest bg-surface-container-lowest rounded"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-mono text-label-mono uppercase text-secondary tracking-widest">Sync Active</span></div><div class="flex items-center gap-space-sm pl-space-md border-l border-surface-container-highest"><div class="flex flex-col items-end text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Arjun Walker</span><span class="font-label-mono text-label-mono text-primary uppercase tracking-wider px-space-xs bg-primary-container/20 border border-primary/30 rounded mt-space-xs">LVL 14 Trailblazer</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1HDhWZCtsDEArZoS1-o4OYIAVs6TCGB7x-gDp2GAsPiQ330VX7rM_Vustoj2GMnVPVA0XCXQ4fZAMv--WwLag4JGuyJbhnnbsueWx7FfFmlFFkOessziT8wuZqqQCkyGh7lanSpHgF69KvBwPzQ606iMClDz9fPmHlQFYYg01KcaOtfDrzwHTO627H5Ym4uczn2s_V2_S6SBKGFGICBRFWYIvBWIE2w0lehEvFs11T0IBbISCnkJ6PQ"/></div></div></div></header><main class="w-full max-w-[1600px] mx-auto px-margin-desktop pt-16 bg-surface-container-lowest flex-1"><div class="flex flex-col w-full">
+<!-- Command Strip / Trek Header -->
+<section class="w-full bg-surface-container-low border-b border-surface-container-highest px-margin-desktop py-space-md">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-7 h-7 bg-primary-container text-on-primary rounded font-label-mono text-label-mono">03</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest">Active Expedition</span>
+<span class="text-outline font-label-mono text-label-mono">/</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Himalayan Ascent Sector</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">Delhi to Kedarnath Sanctuary</h1>
+</div>
+</div>
+<div class="hidden lg:block h-8 w-px bg-surface-container-highest"></div>
+<div class="flex flex-wrap items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span class="px-space-sm py-0.5 bg-surface-container border border-surface-container-highest rounded text-on-surface uppercase">Stage 3 of 6</span>
+<span class="text-outline">•</span>
+<span>Current Pin: <span class="text-on-surface font-semibold">Near Haridwar Sector (NH-334)</span></span>
+<span class="text-outline">•</span>
+<span class="text-secondary font-semibold">46.2% Route Realized</span>
+</div>
+</div>
+<!-- Live Telemetry KPI Chips -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm shrink-0">
+<div class="bg-surface-container px-space-md py-space-xs border border-surface-container-highest rounded">
+<span class="font-label-mono text-label-mono text-outline uppercase block">Current Alt</span>
+<span class="font-metric-large text-headline-sm text-on-surface tabular-nums">314<span class="font-label-md text-label-md text-outline ml-0.5">M</span></span>
+</div>
+<div class="bg-surface-container px-space-md py-space-xs border border-surface-container-highest rounded">
+<span class="font-label-mono text-label-mono text-outline uppercase block">Net Gain</span>
+<span class="font-metric-large text-headline-sm text-secondary tabular-nums">+3,367<span class="font-label-md text-label-md text-outline ml-0.5">M</span></span>
+</div>
+<div class="bg-surface-container px-space-md py-space-xs border border-surface-container-highest rounded">
+<span class="font-label-mono text-label-mono text-outline uppercase block">Traversed</span>
+<span class="font-metric-large text-headline-sm text-primary tabular-nums">214.2<span class="font-label-md text-label-md text-outline ml-0.5">KM</span></span>
+</div>
+<div class="bg-surface-container px-space-md py-space-xs border border-surface-container-highest rounded">
+<span class="font-label-mono text-label-mono text-outline uppercase block">Target Summit</span>
+<span class="font-metric-large text-headline-sm text-on-surface tabular-nums">3,583<span class="font-label-md text-label-md text-outline ml-0.5">M</span></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Workstation Layout (8 Col Map + 4 Col Milestones) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg py-space-lg">
+<!-- Left Visualizer Column (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Topographic Trail Map Visualizer -->
+<div class="relative w-full bg-surface-container-low border border-surface-container-highest rounded overflow-hidden flex flex-col">
+<!-- Visualizer Bar / Controls -->
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container border-b border-surface-container-highest">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-base">terrain</span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-on-surface">Topographic Vector Vectoring • Northern Corridor Grid</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-mono text-label-mono">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant uppercase">GNSS Lock: 8 Satellites</span>
+<span class="text-surface-variant">|</span>
+<button class="px-space-xs py-0.5 bg-surface-container-high hover:bg-surface-variant text-on-surface border border-surface-container-highest rounded uppercase transition-colors" id="toggleGridBtn">Grid Contours</button>
+</div>
+</div>
+<!-- SVG Topographic Projection Canvas -->
+<div class="relative w-full h-[520px] bg-surface-container-lowest overflow-hidden select-none">
+<!-- Ambient Map Base Image with Detailed Prompt -->
+<div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-luminosity filter contrast-125" data-alt="High-resolution aerial satellite topography of the Garhwal Himalayas and Indo-Gangetic plain, stark terrain shadows, ridgelines, glacial river gorges, technical slate grey and charcoal tones, cartographic survey render." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAr6VQWE46WTpH2DKwI6C8SeCeu47_wGiYMgSDeC9EeZV7nu3jXuv_y9rw1q82WXFHIITBO9jPKSMmnYw1uGFPx1qJmX9vgxgTUDYncXXnjScykwCWebJmfTAamuYVQIfVJSd5yXOKtdtm8ZsMPm0PvOF75hNE-hWVgn4AyrjYPGI1YgSTZmzwOC6-lv9ikGkIhqRt3FDvWB5e4p1vNwyO7rNOKH4uT5VZhh25L9neVx_I4L5DTxh9zrw')"></div>
+<!-- Vector Topo Contours & Vectors -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" preserveaspectratio="none" viewbox="0 0 1000 600">
+<defs>
+<pattern height="40" id="cartoGrid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#27272A" stroke-dasharray="2,2" stroke-width="0.5"></path>
+</pattern>
+<lineargradient id="completedGlow" x1="0" x2="1" y1="1" y2="0">
+<stop offset="0%" stop-color="#16A34A"></stop>
+<stop offset="100%" stop-color="#22C55E"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Overlay -->
+<rect fill="url(#cartoGrid)" height="100%" id="gridOverlay" opacity="0.65" width="100%"></rect>
+<!-- Topo Iso-lines (Stylized elevation curves) -->
+<path d="M-50,450 C200,430 400,520 700,480 C850,460 950,510 1050,490" stroke="#1F1F22" stroke-width="1.2"></path>
+<path d="M-50,380 C180,360 420,410 680,360 C860,330 980,390 1050,370" stroke="#27272A" stroke-width="1.2"></path>
+<path d="M-50,290 C220,280 430,310 650,260 C820,210 920,240 1050,230" stroke="#27272A" stroke-width="1.2"></path>
+<path d="M-50,190 C250,170 480,220 720,150 C880,110 960,130 1050,110" stroke="#353438" stroke-width="1.2"></path>
+<path d="M-50,110 C210,90 460,120 730,70 C870,40 960,60 1050,40" stroke="#353438" stroke-width="1.2"></path>
+<!-- River Alaknanda / Ganga Vector -->
+<path d="M960,20 C850,70 790,140 730,220 C640,320 560,370 510,430 C450,510 420,590 410,650" opacity="0.8" stroke="#003111" stroke-dasharray="4,4" stroke-width="2.5"></path>
+<text class="uppercase" fill="#1CA64D" font-family="Inter" font-size="9" letter-spacing="0.1em" x="590" y="385">River Ganga Basin</text>
+<!-- Trail Path: Completed Segment (Solid green) -->
+<!-- India Gate (120,520) -> Meerut (240,430) -> Muzaffarnagar (380,330) -> Haridwar (500,240) -> User Marker (515,225) -->
+<path d="M 120,520 L 240,430 L 380,330 L 500,240 L 515,225" stroke="#16A34A" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path>
+<!-- Trail Path: Upcoming Segment (Dashed amber/orange) -->
+<!-- User Marker (515,225) -> Rishikesh (560,190) -> Devprayag (680,140) -> Rudraprayag (790,100) -> Kedarnath (910,45) -->
+<path d="M 515,225 L 560,190 L 680,140 L 790,100 L 910,45" stroke="#F66018" stroke-dasharray="6,6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Completed Nodes -->
+<!-- Waypoint 1: India Gate (120, 520) -->
+<circle cx="120" cy="520" fill="#18181B" r="10" stroke="#16A34A" stroke-width="2"></circle>
+<circle cx="120" cy="520" fill="#16A34A" r="5"></circle>
+<!-- Waypoint 2: Meerut Cantt (240, 430) -->
+<circle cx="240" cy="430" fill="#18181B" r="9" stroke="#16A34A" stroke-width="2"></circle>
+<circle cx="240" cy="430" fill="#16A34A" r="4.5"></circle>
+<!-- Waypoint 3: Muzaffarnagar (380, 330) -->
+<circle cx="380" cy="330" fill="#18181B" r="9" stroke="#16A34A" stroke-width="2"></circle>
+<circle cx="380" cy="330" fill="#16A34A" r="4.5"></circle>
+<!-- Waypoint 4: Haridwar Ghats (500, 240) -->
+<circle cx="500" cy="240" fill="#18181B" r="9" stroke="#16A34A" stroke-width="2"></circle>
+<circle cx="500" cy="240" fill="#16A34A" r="4.5"></circle>
+<!-- Upcoming Nodes (Locked/Pending) -->
+<!-- Waypoint 5: Rishikesh (560, 190) -->
+<circle cx="560" cy="190" fill="#18181B" r="8" stroke="#F66018" stroke-width="2"></circle>
+<circle cx="560" cy="190" fill="#F66018" r="3"></circle>
+<!-- Waypoint 6: Devprayag (680, 140) -->
+<circle cx="680" cy="140" fill="#18181B" r="7" stroke="#5A4138" stroke-width="1.5"></circle>
+<circle cx="680" cy="140" fill="#353438" r="2.5"></circle>
+<!-- Waypoint 7: Rudraprayag (790, 100) -->
+<circle cx="790" cy="100" fill="#18181B" r="7" stroke="#5A4138" stroke-width="1.5"></circle>
+<circle cx="790" cy="100" fill="#353438" r="2.5"></circle>
+<!-- Waypoint 8: Kedarnath Shrine Summit (910, 45) -->
+<circle cx="910" cy="45" fill="#18181B" r="11" stroke="#FFB599" stroke-width="2"></circle>
+<circle cx="910" cy="45" fill="#F66018" r="5"></circle>
+</svg>
+<!-- Interactive Node Callout Labels (HTML overlays positioned matching SVG coordinates) -->
+<!-- Node 1: Delhi -->
+<div class="absolute left-[12%] top-[86%] -translate-x-1/2 -translate-y-full mb-2 pointer-events-auto group">
+<div class="px-space-xs py-0.5 bg-surface-container border border-secondary text-secondary rounded font-label-mono text-label-mono flex items-center gap-1 shadow-sm whitespace-nowrap">
+<span class="material-symbols-outlined text-xs">check</span>
+<span>India Gate (0 km)</span>
+</div>
+</div>
+<!-- Node 2: Meerut -->
+<div class="absolute left-[24%] top-[71%] -translate-x-1/2 -translate-y-full mb-2 pointer-events-auto">
+<div class="px-space-xs py-0.5 bg-surface-container border border-surface-container-highest text-on-surface-variant rounded font-label-mono text-label-mono whitespace-nowrap">
+<span>Meerut (70 km)</span>
+</div>
+</div>
+<!-- Node 3: Muzaffarnagar -->
+<div class="absolute left-[38%] top-[55%] -translate-x-1/2 -translate-y-full mb-2 pointer-events-auto">
+<div class="px-space-xs py-0.5 bg-surface-container border border-surface-container-highest text-on-surface-variant rounded font-label-mono text-label-mono whitespace-nowrap">
+<span>Muzaffarnagar (142 km)</span>
+</div>
+</div>
+<!-- Node 4: Haridwar -->
+<div class="absolute left-[50%] top-[40%] -translate-x-1/2 -translate-y-full mb-2 pointer-events-auto">
+<div class="px-space-xs py-0.5 bg-surface-container border border-surface-container-highest text-on-surface-variant rounded font-label-mono text-label-mono whitespace-nowrap">
+<span>Haridwar (210 km)</span>
+</div>
+</div>
+<!-- CURRENT USER POSITION (214.2 km) Pin with Pulsing Radar Effect -->
+<div class="absolute left-[51.5%] top-[37.5%] -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-auto cursor-pointer">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-8 h-8 rounded-full bg-primary-container opacity-40 animate-ping"></span>
+<span class="relative w-4 h-4 rounded-full bg-primary-container border-2 border-on-primary"></span>
+</div>
+<!-- Telemetry floating tag -->
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 whitespace-nowrap bg-surface border border-primary-container px-space-sm py-1 rounded shadow-md flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface font-bold">Arjun</span>
+<span class="font-label-mono text-label-mono text-primary font-bold">214.2 KM</span>
+</div>
+</div>
+<!-- Node 5: Rishikesh (Upcoming target) -->
+<div class="absolute left-[56%] top-[31%] -translate-x-1/2 -translate-y-full mb-2 pointer-events-auto">
+<div class="px-space-xs py-0.5 bg-surface-container border border-primary text-primary rounded font-label-mono text-label-mono flex items-center gap-1 shadow-sm whitespace-nowrap animate-pulse">
+<span class="material-symbols-outlined text-xs">flag</span>
+<span>Next: Rishikesh (235 km)</span>
+</div>
+</div>
+<!-- Node 6: Devprayag -->
+<div class="absolute left-[68%] top-[23%] -translate-x-1/2 -translate-y-full mb-2 pointer-events-auto opacity-75">
+<div class="px-space-xs py-0.5 bg-surface-container-lowest border border-surface-container-highest text-outline rounded font-label-mono text-label-mono whitespace-nowrap">
+<span>Devprayag (310 km)</span>
+</div>
+</div>
+<!-- Node 7: Rudraprayag -->
+<div class="absolute left-[79%] top-[16%] -translate-x-1/2 -translate-y-full mb-2 pointer-events-auto opacity-75">
+<div class="px-space-xs py-0.5 bg-surface-container-lowest border border-surface-container-highest text-outline rounded font-label-mono text-label-mono whitespace-nowrap">
+<span>Rudraprayag (378 km)</span>
+</div>
+</div>
+<!-- Node 8: Kedarnath Shrine Destination -->
+<div class="absolute left-[91%] top-[7.5%] -translate-x-1/2 -translate-y-full mb-2 pointer-events-auto">
+<div class="px-space-sm py-1 bg-surface border border-tertiary text-tertiary rounded font-label-mono text-label-mono flex items-center gap-1.5 shadow-md whitespace-nowrap">
+<span class="material-symbols-outlined text-sm text-tertiary">temple_hindu</span>
+<span class="font-bold uppercase tracking-wider">Kedarnath Summit (464 km)</span>
+</div>
+</div>
+<!-- Legend Floating Toolpad -->
+<div class="absolute bottom-space-md right-space-md bg-surface border border-surface-container-highest rounded px-space-md py-space-xs flex items-center gap-space-md z-10 font-label-mono text-label-mono text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-secondary inline-block"></span>
+<span class="uppercase">Completed Track</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 border-b-2 border-dashed border-primary inline-block"></span>
+<span class="uppercase">Unclimbed Corridor</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+<span class="uppercase">Live Position</span>
+</div>
+</div>
+</div>
+<!-- Cross-Section Elevation Graph (Bottom Trench) -->
+<div class="bg-surface-container p-space-md border-t border-surface-container-highest">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">show_chart</span>
+<span class="font-label-mono text-label-mono text-on-surface uppercase tracking-wider">Gradient Profile &amp; Net Vertical Ascent (216m to 3,583m)</span>
+</div>
+<div class="flex items-center gap-space-md font-label-mono text-label-mono">
+<span class="text-outline">Max Gradient: <strong class="text-on-surface">18.4% (Gaurikund-Kedar)</strong></span>
+<span class="text-secondary">Current Alt: <strong class="text-on-surface">314m MSL</strong></span>
+</div>
+</div>
+<!-- SVG Profile Graph -->
+<div class="relative w-full h-28 bg-surface-container-lowest border border-surface-container-highest rounded px-2 pt-2">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 800 100">
+<defs>
+<lineargradient id="elevationFill" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#CA8100" stop-opacity="0.35"></stop>
+<stop offset="60%" stop-color="#16A34A" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#16A34A" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Grid Lines -->
+<line stroke="#27272A" stroke-dasharray="3,3" stroke-width="0.5" x1="0" x2="800" y1="15" y2="15"></line>
+<text fill="#71717A" font-family="Inter" font-size="8" x="5" y="14">3,583m</text>
+<line stroke="#27272A" stroke-dasharray="3,3" stroke-width="0.5" x1="0" x2="800" y1="50" y2="50"></line>
+<text fill="#71717A" font-family="Inter" font-size="8" x="5" y="49">1,800m</text>
+<line stroke="#27272A" stroke-dasharray="3,3" stroke-width="0.5" x1="0" x2="800" y1="88" y2="88"></line>
+<text fill="#71717A" font-family="Inter" font-size="8" x="5" y="86">216m</text>
+<!-- Elevation Profile Vector Area -->
+<!-- 0km(216m, y=88) -> 70km(220m, y=88) -> 142km(240m, y=87) -> 210km(314m, y=85) -> 235km(372m, y=83) -> 310km(830m, y=72) -> 378km(895m, y=69) -> 440km(1980m, y=45) -> 464km(3583m, y=15) -->
+<polygon fill="url(#elevationFill)" points="
+                0,88 
+                120,88 
+                245,87 
+                362,85 
+                370,85
+                405,83 
+                534,72 
+                651,69 
+                758,45 
+                800,15 
+                800,100 
+                0,100"></polygon>
+<polyline fill="none" points="
+                0,88 
+                120,88 
+                245,87 
+                362,85 
+                370,85 
+                405,83 
+                534,72 
+                651,69 
+                758,45 
+                800,15" stroke="#FFB95F" stroke-width="1.75"></polyline>
+<!-- User Progress Vertical Marker -->
+<line stroke="#F66018" stroke-dasharray="2,2" stroke-width="1.5" x1="370" x2="370" y1="0" y2="100"></line>
+<circle cx="370" cy="85" fill="#F66018" r="3.5"></circle>
+</svg>
+<div class="absolute top-1 left-[46.25%] -translate-x-1/2 bg-primary-container px-space-xs py-0.5 rounded font-label-mono text-label-mono text-on-primary font-bold">
+              Current: 314m
+            </div>
+</div>
+</div>
+</div>
+<!-- Quick Expedition Notes & Atmospheric Telemetry Card -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low border border-surface-container-highest p-space-md rounded flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-xl">air</span>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase text-outline">Atmospheric Pressure</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">978 hPa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optimal oxygen absorption rate</span>
+</div>
+</div>
+<div class="bg-surface-container-low border border-surface-container-highest p-space-md rounded flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl">device_thermostat</span>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase text-outline">Haridwar Ridge Temp</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">24.8°C</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Drops to 2.1°C above Rudraprayag</span>
+</div>
+</div>
+<div class="bg-surface-container-low border border-surface-container-highest p-space-md rounded flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-xl">footprint</span>
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase text-outline">Pedometer Aggregate</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">267,750</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Step cadence avg: 114 SPM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Waypoints Checklist Timeline Column (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-low border border-surface-container-highest rounded flex flex-col h-full">
+<!-- Checklist Header -->
+<div class="p-space-md border-b border-surface-container-highest flex items-center justify-between">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-sm">checklist</span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-secondary font-bold">Progression Log</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase">Trail Milestones</h2>
+</div>
+<div class="px-space-sm py-space-xs bg-surface-container border border-surface-container-highest rounded text-right">
+<span class="font-label-mono text-label-mono text-primary font-bold">4 OF 8 CLEARED</span>
+</div>
+</div>
+<!-- Vertical Milestone Timeline -->
+<div class="p-space-md flex-1 flex flex-col space-y-0">
+<!-- Milestone 1 (Completed) -->
+<div class="relative flex gap-space-md pb-space-lg group">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded bg-secondary-container/20 border border-secondary flex items-center justify-center text-secondary shrink-0 z-10">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="w-px h-full bg-secondary/40 -mt-1 -mb-1"></div>
+</div>
+<div class="flex-1 min-w-0 bg-surface-container p-space-sm rounded border border-surface-container-highest">
+<div class="flex items-center justify-between gap-space-xs mb-0.5">
+<span class="font-label-mono text-label-mono text-secondary uppercase font-bold">#1 • 0.0 KM</span>
+<span class="font-label-mono text-label-mono text-outline">OCT 12</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">India Gate, New Delhi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Starting monument cleared on Oct 12. Pedometer calibration initialized.</p>
+</div>
+</div>
+<!-- Milestone 2 (Completed) -->
+<div class="relative flex gap-space-md pb-space-lg group">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded bg-secondary-container/20 border border-secondary flex items-center justify-center text-secondary shrink-0 z-10">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="w-px h-full bg-secondary/40 -mt-1 -mb-1"></div>
+</div>
+<div class="flex-1 min-w-0 bg-surface-container p-space-sm rounded border border-surface-container-highest">
+<div class="flex items-center justify-between gap-space-xs mb-0.5">
+<span class="font-label-mono text-label-mono text-secondary uppercase font-bold">#2 • 70.0 KM</span>
+<span class="font-label-mono text-label-mono text-outline">OCT 16</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Meerut Historic Ridge</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cleared on Oct 16. Fast road pace sustained across highway bypass.</p>
+</div>
+</div>
+<!-- Milestone 3 (Completed) -->
+<div class="relative flex gap-space-md pb-space-lg group">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded bg-secondary-container/20 border border-secondary flex items-center justify-center text-secondary shrink-0 z-10">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="w-px h-full bg-secondary/40 -mt-1 -mb-1"></div>
+</div>
+<div class="flex-1 min-w-0 bg-surface-container p-space-sm rounded border border-surface-container-highest">
+<div class="flex items-center justify-between gap-space-xs mb-0.5">
+<span class="font-label-mono text-label-mono text-secondary uppercase font-bold">#3 • 142.0 KM</span>
+<span class="font-label-mono text-label-mono text-outline">OCT 21</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Muzaffarnagar Oasis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cleared on Oct 21. Water resupply logged at regional canal junction.</p>
+</div>
+</div>
+<!-- Milestone 4 (Completed) -->
+<div class="relative flex gap-space-md pb-space-lg group">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded bg-secondary-container/20 border border-secondary flex items-center justify-center text-secondary shrink-0 z-10">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="w-px h-full bg-primary-container -mt-1 -mb-1"></div>
+</div>
+<div class="flex-1 min-w-0 bg-surface-container p-space-sm rounded border border-surface-container-highest">
+<div class="flex items-center justify-between gap-space-xs mb-0.5">
+<span class="font-label-mono text-label-mono text-secondary uppercase font-bold">#4 • 210.0 KM</span>
+<span class="font-label-mono text-label-mono text-outline">YESTERDAY</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Haridwar Holy Ghats</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cleared yesterday. Ganga gateway verified at Har Ki Pauri footbridge.</p>
+</div>
+</div>
+<!-- Milestone 5 (Active Target Node) -->
+<div class="relative flex gap-space-md pb-space-lg group">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded bg-primary-container text-on-primary flex items-center justify-center font-label-mono text-label-mono font-bold shrink-0 z-10 ring-2 ring-primary/40">
+                5
+              </div>
+<div class="w-px h-full bg-surface-container-highest -mt-1 -mb-1"></div>
+</div>
+<div class="flex-1 min-w-0 bg-surface-container-high p-space-sm rounded border border-primary-container">
+<div class="flex items-center justify-between gap-space-xs mb-0.5">
+<span class="font-label-mono text-label-mono text-primary uppercase font-bold">#5 • 235.0 KM (TARGET)</span>
+<span class="px-space-xs py-0.2 bg-primary/20 text-primary rounded font-label-mono text-label-mono font-semibold">20.8 KM REMAINING</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Rishikesh Foothills</h3>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Approx. 26,000 steps until elevation step change. Gateway to Shivalik ranges.</p>
+<div class="mt-space-sm pt-space-xs border-t border-surface-variant flex items-center justify-between">
+<div class="flex items-center gap-1 font-label-mono text-label-mono text-outline">
+<span class="material-symbols-outlined text-xs text-primary">directions_walk</span>
+<span>Est: 4h 15m walk time</span>
+</div>
+<button class="px-space-sm py-1 bg-primary-container hover:bg-on-primary-fixed text-on-primary font-label-mono text-label-mono uppercase tracking-wider rounded transition-transform active:scale-95">Inspect Waypoint</button>
+</div>
+</div>
+</div>
+<!-- Milestone 6 (Locked) -->
+<div class="relative flex gap-space-md pb-space-lg group opacity-65">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded bg-surface-container border border-surface-container-highest flex items-center justify-center text-outline shrink-0 z-10">
+<span class="material-symbols-outlined text-sm">lock</span>
+</div>
+<div class="w-px h-full bg-surface-container-highest -mt-1 -mb-1"></div>
+</div>
+<div class="flex-1 min-w-0 bg-surface-container-low p-space-sm rounded border border-surface-container-highest">
+<div class="flex items-center justify-between gap-space-xs mb-0.5">
+<span class="font-label-mono text-label-mono text-outline uppercase font-semibold">#6 • 310.0 KM</span>
+<span class="font-label-mono text-label-mono text-outline">LOCKED</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface-variant font-medium truncate">Devprayag Confluence</h3>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Alaknanda and Bhagirathi sacred union point (830m altitude).</p>
+</div>
+</div>
+<!-- Milestone 7 (Locked) -->
+<div class="relative flex gap-space-md pb-space-lg group opacity-65">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded bg-surface-container border border-surface-container-highest flex items-center justify-center text-outline shrink-0 z-10">
+<span class="material-symbols-outlined text-sm">lock</span>
+</div>
+<div class="w-px h-full bg-surface-container-highest -mt-1 -mb-1"></div>
+</div>
+<div class="flex-1 min-w-0 bg-surface-container-low p-space-sm rounded border border-surface-container-highest">
+<div class="flex items-center justify-between gap-space-xs mb-0.5">
+<span class="font-label-mono text-label-mono text-outline uppercase font-semibold">#7 • 378.0 KM</span>
+<span class="font-label-mono text-label-mono text-outline">LOCKED</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface-variant font-medium truncate">Rudraprayag Canyon</h3>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Mountain pass sector with sustained 7% gradient.</p>
+</div>
+</div>
+<!-- Milestone 8 (Locked Summit) -->
+<div class="relative flex gap-space-md group opacity-65">
+<div class="flex flex-col items-center">
+<div class="w-7 h-7 rounded bg-surface-container border border-surface-container-highest flex items-center justify-center text-tertiary shrink-0 z-10">
+<span class="material-symbols-outlined text-sm">flag</span>
+</div>
+</div>
+<div class="flex-1 min-w-0 bg-surface-container-low p-space-sm rounded border border-surface-container-highest">
+<div class="flex items-center justify-between gap-space-xs mb-0.5">
+<span class="font-label-mono text-label-mono text-tertiary uppercase font-bold">#8 • 464.0 KM (FINISH)</span>
+<span class="font-label-mono text-label-mono text-tertiary">3,583M</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface-variant font-medium truncate">Kedarnath High Shrine</h3>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Terminal temple plateau in Mandakini valley glacier basin.</p>
+</div>
+</div>
+</div>
+<!-- Footer Expedition Action -->
+<div class="p-space-md border-t border-surface-container-highest bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono uppercase text-outline">Daily Cap</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">18,500 / 25,000 steps</span>
+</div>
+<button class="px-space-md py-space-xs bg-secondary-container hover:bg-secondary text-on-secondary-container hover:text-on-secondary font-label-md text-label-md uppercase tracking-wider rounded font-bold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Manual Step Entry</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interaction to toggle topographic grid
+  const toggleBtn = document.getElementById('toggleGridBtn');
+  const gridOverlay = document.getElementById('gridOverlay');
+  if (toggleBtn && gridOverlay) {
+    toggleBtn.addEventListener('click', () => {
+      const isVisible = gridOverlay.getAttribute('opacity') !== '0';
+      gridOverlay.setAttribute('opacity', isVisible ? '0' : '0.65');
+      toggleBtn.classList.toggle('text-primary');
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low border-t border-surface-container-highest"><div class="h-12 max-w-[1600px] mx-auto px-margin-desktop flex items-center justify-between font-label-mono text-label-mono tracking-wider"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-base leading-none">sync_saved_locally</span><span class="text-on-surface-variant uppercase">Pedometer Linked: <span class="text-secondary font-bold">Live Stream (42 Hz)</span></span></div><div class="hidden sm:block w-px h-3 bg-surface-container-highest"></div><div class="hidden sm:flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-base leading-none">public</span><span class="text-on-surface-variant uppercase">Collective Global Distance: <span class="text-on-surface font-bold">1,842,910 KM</span></span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-lowest border border-surface-container-highest rounded text-on-surface-variant"><span class="material-symbols-outlined text-sm leading-none">directions_run</span><span class="text-on-surface uppercase">Strava Engine</span></div><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-lowest border border-surface-container-highest rounded text-on-surface-variant"><span class="material-symbols-outlined text-sm leading-none">favorite</span><span class="text-on-surface uppercase">Apple HealthKit</span></div></div></div></footer></body></html>

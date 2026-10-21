@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">StepQuest</string>
+    <string name="app_tagline">Turn Every Step Into an Adventure</string>
+
+    <!-- Auth screen -->
+    <string name="auth_welcome">Welcome to StepQuest</string>
+    <string name="auth_sign_in">Sign In</string>
+    <string name="auth_sign_up">Sign Up</string>
+    <string name="auth_email_hint">Email address</string>
+    <string name="auth_password_hint">Password</string>
+    <string name="auth_no_account">Don\'t have an account? Sign Up</string>
+    <string name="auth_have_account">Already have an account? Sign In</string>
+    <string name="auth_google">Continue with Google</string>
+    <string name="auth_error_empty">Please fill in all fields</string>
+
+    <!-- Username setup -->
+    <string name="username_title">Choose Your Trail Name</string>
+    <string name="username_hint">Username (visible on leaderboard)</string>
+    <string name="username_cta">Start My Journey</string>
+
+    <!-- Home screen -->
+    <string name="home_greeting_morning">Good Morning</string>
+    <string name="home_greeting_afternoon">Good Afternoon</string>
+    <string name="home_greeting_evening">Good Evening</string>
+    <string name="home_steps_today">Steps Today</string>
+    <string name="home_goal">Daily Goal</string>
+    <string name="home_km_today">km today</string>
+    <string name="home_active_journey">Active Journey</string>
+    <string name="home_next_milestone">Next Milestone</string>
+    <string name="home_no_journey">No active journey</string>
+    <string name="home_pick_journey">Pick a Quest</string>
+    <string name="home_weekly_streak">Day Streak</string>
+    <string name="home_calories">Calories</string>
+
+    <!-- Journey screens -->
+    <string name="journey_choose">Choose Your Quest</string>
+    <string name="journey_search_hint">Search journeys…</string>
+    <string name="journey_difficulty_easy">Easy</string>
+    <string name="journey_difficulty_moderate">Moderate</string>
+    <string name="journey_difficulty_hard">Hard</string>
+    <string name="journey_start">Start This Quest</string>
+    <string name="journey_abandon">Abandon Quest</string>
+    <string name="journey_total_distance">Total Distance</string>
+    <string name="journey_progress">Progress</string>
+    <string name="journey_milestones">Milestones</string>
+    <string name="journey_completed">Quest Completed! 🎉</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard_title">Top Trailblazers</string>
+    <string name="leaderboard_weekly">Weekly Challenge</string>
+    <string name="leaderboard_rank">Your Rank</string>
+    <string name="leaderboard_km">km</string>
+
+    <!-- Achievements -->
+    <string name="achievements_title">Medals &amp; Badges</string>
+    <string name="achievements_earned">earned</string>
+    <string name="achievements_locked">Locked</string>
+
+    <!-- Profile -->
+    <string name="profile_title">My Profile</string>
+    <string name="profile_sign_out">Sign Out</string>
+    <string name="profile_sign_out_confirm">Your progress is saved to the cloud. You can sign back in anytime.</string>
+    <string name="profile_steps">Total Steps</string>
+    <string name="profile_km">Km Walked</string>
+    <string name="profile_badges">Badges</string>
+    <string name="profile_edit_name">Edit Name</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_journeys">Journeys</string>
+    <string name="nav_medals">Medals</string>
+    <string name="nav_ranks">Ranks</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_name">Step Tracker</string>
+    <string name="notif_title">StepQuest Active</string>
+    <string name="notif_milestone">🎉 Milestone Reached: %1$s</string>
+    <string name="notif_milestone_channel">Milestone Alerts</string>
+
+    <!-- Errors -->
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_network">No internet connection.</string>
+    <string name="error_sensor">Step sensor not available on this device.</string>
+    <string name="error_retry">Retry</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_avatar">User avatar</string>
+    <string name="cd_step_ring">Step progress ring</string>
+    <string name="cd_map">Journey route map</string>
+    <string name="cd_badge_earned">Earned badge</string>
+    <string name="cd_badge_locked">Locked badge</string>
+</resources>

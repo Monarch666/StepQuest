@@ -1,0 +1,17 @@
+# StepQuest — Local Configuration
+# Copy this file to local.properties (DO NOT commit local.properties to git)
+
+# ── Supabase (Settings → API in Supabase dashboard) ──────────────────────────
+SUPABASE_URL=https://YOUR_PROJECT_REF.supabase.co
+SUPABASE_ANON_KEY=your-anon-key-here
+
+# ── Google Maps (console.cloud.google.com → APIs & Services → Credentials) ───
+MAPS_API_KEY=your-maps-api-key-here
+
+# ── Release Keystore (Play Store signing) ────────────────────────────────────
+# Generate with: keytool -genkey -v -keystore stepquest-release.jks
+#                        -alias stepquest -keyalg RSA -keysize 2048 -validity 10000
+KEYSTORE_PATH=../stepquest-release.jks
+KEYSTORE_PASSWORD=your-keystore-password
+KEY_ALIAS=stepquest
+KEY_PASSWORD=your-key-password

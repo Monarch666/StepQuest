@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Background circle: Trail Orange -->
+    <path
+        android:fillColor="#F25C05"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
+    <!-- Boot / trail icon in white -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 C44.6,20 37,27.6 37,37 L37,56 L35,56 C33.3,56 32,57.3 32,59 L32,71 C32,73.8 34.2,76 37,76 L71,76 C73.8,76 76,73.8 76,71 L76,59 C76,57.3 74.7,56 73,56 L71,56 L71,37 C71,27.6 63.4,20 54,20 Z M54,26 C60.1,26 65,30.9 65,37 L65,56 L43,56 L43,37 C43,30.9 47.9,26 54,26 Z M38,62 L70,62 L70,70 L38,70 Z" />
+    <!-- Small footprints -->
+    <circle android:fillColor="#FFFFFF" android:cx="47" android:cy="84" android:r="3" />
+    <circle android:fillColor="#FFFFFF" android:cx="61" android:cy="84" android:r="3" />
+    <circle android:fillColor="#FFFFFF" android:cx="54" android:cy="90" android:r="3" />
+</vector>

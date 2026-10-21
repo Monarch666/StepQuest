@@ -1,0 +1,18 @@
+{
+  "name": "stepquest-web",
+  "version": "1.0.0",
+  "description": "StepQuest Web Application — Real-World Walking Adventure",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "stepquest",
+    "fitness",
+    "walking",
+    "adventure",
+    "supabase"
+  ],
+  "author": "StepQuest Team",
+  "license": "MIT"
+}

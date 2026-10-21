@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary: Trail Orange -->
+    <color name="trail_orange">#F25C05</color>
+    <color name="trail_orange_dark">#A23A00</color>
+    <color name="trail_orange_light">#FFDBCE</color>
+
+    <!-- Secondary: Forest Green -->
+    <color name="forest_green">#2A6B2C</color>
+    <color name="forest_green_light">#ACF4A4</color>
+
+    <!-- Tertiary: Sky Blue -->
+    <color name="sky_blue">#006096</color>
+
+    <!-- Surfaces -->
+    <color name="background_light">#FCF9F8</color>
+    <color name="surface_light">#FCF9F8</color>
+    <color name="surface_container">#F0EDEC</color>
+
+    <!-- Text -->
+    <color name="on_surface">#1C1B1B</color>
+    <color name="on_surface_variant">#5A4137</color>
+
+    <!-- Splash / status bar -->
+    <color name="splash_background">#F25C05</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

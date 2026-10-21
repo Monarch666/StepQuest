@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base app theme (applied after splash) -->
+    <style name="Theme.StepQuest" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/trail_orange_dark</item>
+        <item name="android:navigationBarColor">@color/background_light</item>
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+
+    <!-- Splash screen theme (Android 12+ SplashScreen API) -->
+    <style name="Theme.StepQuest.Splash" parent="Theme.SplashScreen">
+        <!-- Splash icon: the launcher foreground drawable -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!-- Splash background: Trail Orange -->
+        <item name="windowSplashScreenBackground">@color/trail_orange</item>
+        <!-- Brand color shown in the animated splash -->
+        <item name="windowSplashScreenIconBackgroundColor">@color/trail_orange</item>
+        <!-- Duration: 1 second -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!-- Theme to switch to after splash finishes -->
+        <item name="postSplashScreenTheme">@style/Theme.StepQuest</item>
+    </style>
+</resources>
